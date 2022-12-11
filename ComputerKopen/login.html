@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Login</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <link href="./assets/img/favicon.png" rel="icon">
+        <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper account-verification">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 ps-0 pe-0">
+                        <div class="form-side-display d-flex justify-content-center align-items-center">
+                            <a href="/index.html" class="d-inline-block">
+                                <div class="form-side-logo mb-2">
+                                    <img src="./assets/img/Logo-Computerkopen.png" alt="logo" class="img-fluid"/>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 ps-0 pe-0  forms-h">
+                        <div class="login-main">
+                            <div class="login-main-content">
+                                <strong class="para-light">Welcome Back</strong>
+                                <h2>Login to your Account</h2>
+                                <form class="login-form-main">
+                                    <div class="mb-3 login-form-input">
+                                        <input type="email" class="form-control" placeholder="email@example.com" id="emailHelp" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 login-form-input form-password-eye-box">
+                                        <input type="password" class="form-control pe-5" placeholder="Password" id="exampleInputPassword1">
+                                        <span class="form-password-eye" id="passwordVis" onclick="passwordVisibility()">
+                                            <i class="fa fa-eye" id="eyeopened" aria-hidden="true"></i>  
+                                        </span>
+                                    </div>
+                                    <div class="mb-4 form-check d-flex justify-content-between">
+                                        <span>
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                        </span>
+                                        <a href="/forgetPassword.html" class="form-link-a" id="forget-password">Forget Password?</a>
+                                    </div>
+                                    <a class="btn mb-3 main-btn w-100" href="/profile.html">Login</a>
+                                    <div>
+                                        <a href="/signup.html" id="register-new-user" class="form-link-a">Register As New User</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+    </body>
+</html>

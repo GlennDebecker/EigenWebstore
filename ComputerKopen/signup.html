@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Resgister</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <link href="./assets/img/favicon.png" rel="icon">
+        <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper account-verification">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 ps-0 pe-0">
+                        <div class="form-side-display d-flex justify-content-center align-items-center">
+                            <a href="/index.html" class="d-inline-block">
+                                <div class="form-side-logo mb-2">
+                                    <img src="./assets/img/Logo-Computerkopen.png" alt="logo" class="img-fluid"/>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 ps-0 pe-0  forms-h">
+                        <div class="login-main">
+                            <div class="login-main-content">
+                                <strong class="para-light">Hello User</strong>
+                                <h2>Create a New Account</h2>
+                                <form class="login-form-main">
+                                    <div class="d-flex mb-0 mb-md-3  form-row justify-content-between">
+                                        <div class="login-form-input me-md-2 me-0 mb-md-0 mb-3">
+                                            <input type="text" class="form-control" placeholder="First Name" id="exampleInputName1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="login-form-input mb-md-0 mb-3">
+                                            <input type="text" class="form-control" placeholder="Surname" id="exampleInputName2" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-0 mb-md-3  form-row justify-content-between">
+                                        <div class="login-form-input me-md-2 me-0 mb-md-0 mb-3">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Gender</option>
+                                                <option value="1">Male </option>
+                                                <option value="2">Female</option>
+                                                <option value="3">Neither</option>
+                                            </select>
+                                        </div>
+                                        <div class="login-form-input mb-md-0 mb-3">
+                                            <input type="email" class="form-control" placeholder="email@example.com" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-0 mb-md-3 form-row justify-content-between">
+                                        <div class="login-form-input form-password-eye-box me-md-2 me-0 mb-md-0 mb-3">
+                                            <input type="password" class="form-control pe-5" placeholder="Password" id="exampleInputPassword1">
+                                            <span class="form-password-eye" id="passwordVis" onclick="passwordVisibility()">
+                                                <i class="fa fa-eye" id="eyeopened" aria-hidden="true"></i>  
+                                            </span>
+                                        </div>
+                                        <div class="login-form-input form-password-eye-box mb-md-0 mb-3">
+                                            <input type="password" class="form-control pe-5" placeholder="Confirm Password" id="exampleInputPassword2">
+                                            <span class="form-password-eye" id="passwordVis" onclick="passwordConfirm()">
+                                                <i class="fa fa-eye" id="eyeopened" aria-hidden="true"></i>  
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-0 mb-md-3  form-row justify-content-between">
+                                        <div class="login-form-input me-md-2 me-0 mb-md-0 mb-3">
+                                            <input type="text" class="form-control" placeholder="Postal Code" id="exampleInputName1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="login-form-input mb-md-0 mb-3">
+                                            <input type="text" class="form-control" placeholder="Street, House No." id="exampleInputName2" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mb-0 mb-md-3  form-row justify-content-between">
+                                        <div class="login-form-input me-md-2 me-0 mb-md-0 mb-3">
+                                            <input type="text" class="form-control" placeholder="City" id="exampleInputName2" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="login-form-input mb-md-0 mb-3">
+                                            <input type="text" class="form-control" placeholder="Phone" id="exampleInputName1" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <a class="btn mb-3 main-btn w-100" href="#your-link">Register</a>
+                                    <div class="d-flex align-items-center">
+                                        <span class="me-1">Already Have an Account? </span><a href="/login.html" id="register-new-user" class="form-link-a">Login</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+    </body>
+</html>
