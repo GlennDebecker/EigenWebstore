@@ -44,7 +44,7 @@
 
 /* common css for html tags */
 *{box-sizing: border-box; margin: 0; padding: 0;}
-body {font-family: "Nunito", sans-serif;color: #444444;background-color: #d3d3d3;}
+body {font-family: "Nunito", sans-serif;color: #444444;background-color: #f2f2f2;}
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:focus, a:focus-visible,.btn:focus, .btn:focus-visible{box-shadow: none; outline: 0;}
@@ -136,8 +136,8 @@ ul{list-style: none; margin: 0; padding: 0;}
 
 /* prducts box style */
 
-/* about us box on home */
-.about-box{background-color: #2f1341;color: #fff; text-align: center; padding: 20px;}
+/* about me box on home */
+.about-box{background-color: #005E95;color: #fff; text-align: center; padding: 20px;}
 .about-box .image{width: 240px; height: 240px; margin: 0 auto; border: 1px solid #fff; padding: 10px; background-color: transparent; display: flex; justify-content: center; align-items: center; overflow: hidden;border-radius: 50%;}
 .about-box .image img{width: 245px; height: 230px;}
 .about-box p{font-size: 16px;}
@@ -171,6 +171,7 @@ textarea{resize: none;}
 #eyeopened{display:block;}
 #eyeclosed{display:none;}
 .account-verification .main-btn{border-radius: 7px; background: #005E95;color: #fff; padding: 8px 10px; /*min-width: 100%;*/ overflow: hidden; border: none; transition: all  0.3s;}
+.account-verification {background: #ffffff}
 /* .account-verification .main-btn:hover{color: #000; background-color: rgb(0, 238, 255);} */
 .contact-box .wrap{padding: 40px 30px; background-color: #c3e9ff; border-radius: 10px; color: #000;}
 .contact-box .wrap .ref-icon{background:#fff; padding: 8px; width: 35px; height: 35px; border: 1px solid #fff; border-radius: 50%; color: #005E95;}
@@ -275,8 +276,7 @@ input[type="file"] {display: none;}
 .footer-icons ul{margin-bottom: 22px;}
 .footer-icons ul li a .fa-facebook{color:#3b5998 ;}
 .footer-icons ul li a .fa-twitter{color:#00acee;}
-.footer-icons ul li a .fa-linkedin{color: #0e76a8;}
-.footer-icons ul li a .fa-google-plus{color: #db4a39;}
+.footer-icons ul li a .fa-instagram{color: #db4a39;}
 .footer-content{position: relative;}
 .footer-content p{font-size: 14px;letter-spacing: 0px;color: #FFFFFF;opacity: 1;margin-bottom: 0;}
 .footer-content .footer-powered-by{position: absolute;right: 40px;bottom: 0px;color: #fff;font-size: 14px;gap: 6px;}
@@ -293,8 +293,8 @@ input[type="file"] {display: none;}
 .cookies-section .modal .modal-dialog .modal-content .modal-header{border-bottom: none;background-color: #a2b6ff;}
 .cookies-section .modal .modal-dialog .modal-content{background-color: #d7d7d7;}
 .cookies-section .modal .modal-dialog .modal-footer{border-top: #a2b6ff;}
-
 /* cookies model */
+
 
 /* our cards section */
 .card {background-color: #fff;border-radius: 10px;border: none;position: relative;transition: all 0.3s;margin-bottom: 30px;box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1);}
@@ -328,7 +328,7 @@ input[type="file"] {display: none;}
 
 /* products detail pages */
 .products-detail{padding: 50px 0 40px 0;}
-.products-detail .wrap{padding: 40px; background-color: #c0f6fa; border-radius: 15px;}
+.products-detail .wrap{padding: 40px; background-color: #f8f8f8; border-radius: 15px;border-color: #005e95; border-radius: 1%;}
 .products-detail .wrap .head{margin-bottom: 40px;}
 .products-detail .wrap .head h2{font-size: 35px;}
 .products-detail .wrap .head strong{font-size: 20px;}
@@ -343,7 +343,6 @@ input[type="file"] {display: none;}
 .products-detail .wrap .price{font-size: 22px;}
 .products-detail .wrap .price .buy-btns a{color: #fff; padding: 10px 30px; border: none;}
 .products-detail .wrap .price .buy-btns a:first-child{background-color: #04db70;}
-.products-detail .wrap .price .buy-btns a:last-child{background-color: #00adff;}
 .products-detail .wrap .description p{font-size: 16px ;}
 .products-detail .wrap .suggestions ul{list-style-type: disc; padding-left: 10px;}
 .products-detail .wrap .table>:not(caption)>*>*{background-color: #fff;}
