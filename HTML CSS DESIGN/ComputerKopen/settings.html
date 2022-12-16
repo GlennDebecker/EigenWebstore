@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Settings</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <link href="./assets/img/favicon.png" rel="icon">
+        <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="header">
+                <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+                    <div class="container">
+                        <strong class="site-logo">
+                            <a href="/index.html">
+                                <img src="./assets/img/Logo-Computerkopen.png" alt="logo" class="img-fluid"/>
+                            </a>
+                        </strong>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                            <ul class="d-lg-flex align-items-center d-block list-unstyled" id="nav">
+                                <li><a class="nav-link" href="/index.html">Home</a></li>
+                                <li><a class="nav-link " href="/products.html">Products</a></li>
+                                <li><a class="nav-link " href="/faqs.html">FAQ</a></li>
+                                <li><a class="nav-link  " href="/contact-us.html">Contact</a></li>
+                                <li class="language">
+                                    <div class="switch">
+                                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                                        <label for="language-toggle"></label>
+                                        <span class="on">NL</span>
+                                        <span class="off">EN</span>
+                                    </div>
+                                </li>
+                                <span class="d-flex header-btn-wrap">
+                                    <li>
+                                        <a class="nav-link header-btn" href="/profile.html">Profile</a>
+                                        <a href="/login.html" class="login-mini d-flex">
+                                            <span class="me-2">Logout</span>
+                                            <span><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                                        </a>
+                                    </li>   
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="position-relative contact-page-wrap">
+                    <banner class="faqs-banner">
+                        <div class="image">
+                            <img src="./assets/img/settings.svg" alt="faqs" class="img-fluid" />
+                        </div>
+                    </banner>
+                    <div class="settings account-verification faqs-body">
+                        <div class="container content  mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-12">
+                                    <div class="contact-box">
+                                        <strong class="para-light">Need change?</strong>
+                                        <h1>Update Profile</h1>
+                                        <form class="login-form-main">
+                                            <div class="form-row">
+                                                <div class="d-lg-flex">
+                                                    <div class="login-form-input mb-lg-3 mb-2 me-lg-2 me-0">
+                                                        <input type="text" class="form-control" value="JustGlenn" id="nameHelp" aria-describedby="nameHelp">
+                                                    </div>
+                                                    <div class="login-form-input mb-lg-3 mb-2">
+                                                        <input type="email" class="form-control" value="email@example.com" id="emailHelp" aria-describedby="emailHelp">
+                                                    </div>
+                                                </div>
+                                                <div class="d-lg-flex">
+                                                    <div class="mb-lg-3 mb-2 login-form-input form-password-eye-box me-lg-2 me-0">
+                                                        <input type="password" class="form-control pe-5" value="Password123" id="exampleInputPassword1">
+                                                        <span class="form-password-eye" id="passwordVis" onclick="passwordVisibility()">
+                                                            <i class="fa fa-eye" id="eyeopened" aria-hidden="true"></i>  
+                                                        </span>
+                                                    </div>
+                                                    <div class="login-form-input mb-lg-3 mb-2">
+                                                        <input type="tel" class="form-control" value="03058427980" id="phoneHelp" aria-describedby="phoneHelp">
+                                                    </div>
+                                                </div>
+                                                <div class="d-lg-flex mb-3">
+                                                    <div class="login-form-input mb-lg-3 mb-2 me-lg-2 me-0">
+                                                        <input type="text" class="form-control" value="34400" id="postalHelp" aria-describedby="postalHelp">
+                                                    </div>
+                                                    <div class="login-form-input mb-md-0 mb-3">
+                                                        <input type="text" class="form-control" value="Street, House No." id="addressHelp" aria-describedby="addressHelp">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <a class="btn mb-1 main-btn" href="#your-link">Update</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer id="footer">
+                <div class="container">
+                    <div class="footer-content d-flex justify-content-center align-items-center flex-column">
+                        <strong class="site-logo footer-logo-img">
+                            <a href="/index.html">
+                                <img src="./assets/img/Logo-Computerkopen.png" alt="logo" class="img-fluid"/>
+                            </a>
+                        </strong>
+                        <div class="footer-nav">
+                            <ul class="navbar-nav flex-row flex-wrap justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/privacy-policy.html">Privacy Policy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/cookie-settings.html">Cookie Settings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/return-policy.html">Return Policy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/terms-conditions.html">Terms & Conditions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="delivery-policy.html">Delivery Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-icons">
+                            <ul class="list-unstyled d-flex">
+                                <li>
+									<a href="#">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+									</a>
+								</li>
+                            </ul>
+                        </div>
+                        <p>Copyright © 2022 ComputerKopen, Inc. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/custom.js"></script>
+    </body>
+</html>
