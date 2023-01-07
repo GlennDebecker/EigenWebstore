@@ -1,0 +1,46 @@
+a{
+    text-decoration: none;
+}
+
+.profile-details{
+    left: -100%;
+}
+
+/* Custom Menu Bar CSS */
+.custom-menu .nav-item .nav-link p{
+    margin-left: 5px;
+}
+
+/* Custom Card Design */
+.custom-card h3{
+    margin: 0px !important;
+}
+.custom-card .card-header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Select2 Fixes */
+.select2{
+    width: 100% !important;
+}
+
+/* Table CSS */
+.table tr th{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center !important;
+    vertical-align: middle !important;
+
+}
+.table tr td{
+    text-align: center !important;
+    vertical-align: middle !important;
+
+}
+
+@media (max-width:750px) {
+    .profile-details{
+        left: -380%;
+    }
+}

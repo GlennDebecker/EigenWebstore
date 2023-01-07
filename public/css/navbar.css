@@ -1,0 +1,25 @@
+.navbar{
+    background: rgb(1,248,152);
+    background: -moz-linear-gradient(90deg, rgba(1,248,152,1) 0%, rgba(1,255,144,1) 50%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(1,248,152,1) 0%, rgba(1,255,144,1) 50%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(1,248,152,1) 0%, rgba(1,255,144,1) 50%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01f898",endColorstr="#00d4ff",GradientType=1);
+}
+.navbar .nav-logo{
+    height: 50px;
+    width: auto;
+    object-fit: cover;
+
+}
+.navbar .nav-link{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-right: 25px;
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+.navbar .nav-link:hover {
+    box-shadow: inset 100px 0 0 0 #1b4f59;
+    color: white;
+}
