@@ -16,6 +16,17 @@
                     <li><a class="nav-link {{ Request::is('products') ? 'active' : '' }}" href="{{ route('frontend.products') }}">Products</a></li>
                     <li><a class="nav-link {{ Request::is('frequently-asked-questions') ? 'active' : '' }}" href="{{ route('frontend.faq') }}">FAQ</a></li>
                     <li><a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{ route('frontend.contact') }}">Contact</a></li>
+                    @if (auth()->user())
+                    @if (auth()->user()->role==3 || auth()->user()->role==2)
+                    <li><a class="nav-link " href="{{ route('users.index') }}">dashboard</a></li>
+
+                    @endif
+                    @if (auth()->user()->role==1)
+                    <li><a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{ route('frontend.contact') }}">chat</a></li>
+
+                    @endif
+                    @endif
+                 
                     <li class="language">
                         <div class="switch">
                             <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" {{ session()->get('locale') == 'nl' ? 'checked' : '' }}>
@@ -24,11 +35,13 @@
                             <span class="off" id="nl" data-url="{{ route('lang', 'nl') }}">NL</span>
                         </div>
                     </li>
+                   
                     <span class="d-flex header-btn-wrap">
                         <li>
+                      
                             @if (auth()->user())
-                                @if(Request::is('profile'))
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                @if(!Request::is('profile'))
+                                <form id="logout-form" class="nav-link header-btn" action="{{ route('logout') }}" method="POST">
                                     @csrf
                                     <a class="nav-link header-btn" id="logout-button" href="javascript:void(0);" >
                                         <span class="me-2">
@@ -38,7 +51,6 @@
                                     </a>
                                 </form>
                                 @else
-                                    <a class="nav-link header-btn" href="{{ route('frontend.user.profile') }}">Profile</a>
                                 @endif
                             @else
                                 <a href="{{ route('login') }}" class="nav-link header-btn">

@@ -5,7 +5,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\App;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,7 @@ use App\Http\Controllers\UserController;
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group.
+| contains the "web" middleware group. Now create something great!
 |
 */
 
@@ -63,5 +65,16 @@ Route::group(['middleware' => ['auth', 'checkstatus', 'admin']], function () {
         Route::get('/edit/{id}','edit')->name('edit')->middleware(['admin']);
         Route::post('/edit-store','edit_update')->name('edit.store')->middleware(['admin']);
         Route::get('/status/{id}','status')->name('status')->middleware(['admin']);
+    });
+
+    Route::controller(ProductController::class)->prefix('products')->name('products.')->group(function(){
+        Route::get('/index-product','index')->name('index-product')->middleware(['admin']);
+        Route::get('/add-product','create')->name('add-product');
+        Route::post('/add-product/store','store')->name('store-product');
+        Route::get('/view-product/{id}','view')->name('view-product');
+        Route::get('/edit-product/{id}','edit')->name('edit-product');
+        Route::post('/edit-product-store','edit_update')->name('edit.store-product');
+        Route::delete('/delete-product/{id}','destroy')->name('delete-product');
+ 
     });
 });

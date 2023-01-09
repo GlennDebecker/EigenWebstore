@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-{{-- meta --}}
+    {{-- meta --}}
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
@@ -75,9 +75,7 @@
         @endif
     </script>
 
-{{-- Frontend Assets --}}
+    {{-- Frontend Assets --}}
     <script src="{{ asset('assets/frontend/js/custom.js') }}"></script>
-
-
 </body>
 </html>

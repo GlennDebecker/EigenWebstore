@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('title', 'Confirm Password')
 
@@ -99,4 +99,9 @@
         });
     });
 </script>
+
+
+
+
+
 @endsection

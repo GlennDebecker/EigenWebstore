@@ -17,7 +17,9 @@ class UserController extends Controller
     }
 
     public function index(Request $request){
-        $users = User::with('role_name')->latest()->get();
+      
+        $users = User::all();
+
         if ($request->ajax()) {
             return Datatables::of($users)
                     ->addIndexColumn()

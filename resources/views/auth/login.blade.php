@@ -1,7 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/login.css') }}">
 <div class="wrapper account-verification">
     <div class="container-fluid">
         <div class="row align-items-center">

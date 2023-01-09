@@ -1,3 +1,7 @@
+
+<script type="text/javascript" src="js/jquery-1.8.0.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
@@ -8,7 +12,7 @@
 
     <ul class="navbar-nav ml-auto mr-2">
         <li class="nav-item dropdown user-menu">
-            <a href="#" class="nav-link profile-toggle">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="@if(isset(auth()->user()->image)){{ asset(auth()->user()->image)}}@else{{ asset('assets/image/default/avatar.png') }}@endif"
                      class="user-image img-circle elevation-2" alt="{{ Auth::user()->name() }}">
                 <span class="d-none d-md-inline">{{ auth()->user()->name() }}</span>
@@ -38,5 +42,14 @@
                 </li>
             </ul>
         </li>
+    
     </ul>
 </nav>
+<script>
+    
+
+
+    $(document).ready( function() {
+    $('.dropdown-toggle').dropdown();
+    });
+    </script>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Cookie;
@@ -10,7 +11,9 @@ class FrontendController extends Controller
 {
     //Home page
     public function home(Request $request){
-        return view('frontend.home');
+        $products=Product::all();
+
+        return view('frontend.home')->with('products',$products);
     }
 
     //All products page
@@ -29,8 +32,14 @@ class FrontendController extends Controller
     }
 
     //Single Product page
-    public function product(){
-        return view('frontend.product');
+    public function product($id){
+       
+        $product=Product::find($id);
+        $con=preg_split ('/'.'-'.'/',$product->cons);
+        $pos=preg_split ('/'.'-'.'/',$product->pros);
+   
+      
+        return view('frontend.product')->with('product',$product)->with('cons',$con)->with('pros',$pos);
     }
 
     //Privacy Policy, Cookie Settings, Return Policy, Terms & Conditions, Delivery Policy pages

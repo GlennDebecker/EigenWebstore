@@ -21,6 +21,14 @@
             </a>
         </li>
         <li class="nav-item">
+            <a href="{{ route('products.index-product') }}" class="nav-link {{ Request::is('products/*') ? 'active' : '' }}">
+                <i class="fa-solid fa-shop"></i>
+                <p>
+                    Product Management
+                </p>
+            </a>
+        </li>
+        <li class="nav-item">
             <a href="{{ url('/translations') }}" class="nav-link {{ Request::is('translations') ? 'active' : '' }} {{ Request::is('translations/*') ? 'active' : '' }}">
                 <i class="fa-solid fa-earth-americas"></i>
                 <p>
