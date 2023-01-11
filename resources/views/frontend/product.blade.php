@@ -46,12 +46,17 @@
                             </strong>
                         </div>
                         <div class="buy-btns d-flex align-items-center justify-content-center">
-                            <a href="" class="main-btn d-flex align-items-center me-3">
-                                <span class="me-2">
-                                    <i class="fa fa-info" aria-hidden="true"></i>
-                                </span>
-                                <span class="text">Request more info</span>
-                            </a>
+                            @if (auth()->user())
+                                @if (auth()->user()->role==1)
+                                <a href="{{ route('frontend.user.chat', ['pre'=>'Can I order this '.$product->name]) }}" class="main-btn d-flex align-items-center me-3">
+                                    <span class="me-2">
+                                        <i class="fa fa-info" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="text">Request more info</span>
+                                </a>
+                                @endif
+                            @endif
+                        
 
                         </div>
                     </div>

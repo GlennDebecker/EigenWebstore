@@ -16,9 +16,9 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     {{-- Scripts --}}
-    <script src="{{ asset('assets/frontend/js/jquery.js') }}" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ asset('js/backend/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/backend/bootstrap.min.js') }}"></script>
     <script src="{{ asset('assets/frontend/js/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/bootstrap.min.js') }}"></script>
 
     {{-- Toaster --}}
     <link href="{{ asset('css/toastr/toastr.min.css') }}" rel="stylesheet">

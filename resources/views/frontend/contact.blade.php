@@ -46,41 +46,27 @@
             <div class="get-in-touch contact-main mb-4">
                 <strong class="para-light">Need help?</strong>
                 <h1>Get in Touch</h1>
-                <form class="login-form-main">
+                <form class="login-form-main" method="POST" action="{{ route('frontend.save_claim') }}">
+                    @csrf
                     <div class="d-flex mb-0 mb-md-3  form-row justify-content-between">
                         <div class="login-form-input me-md-2 me-0 mb-md-0 mb-3">
-                            <input type="text" class="form-control" placeholder="Enter your name" id="nameHelp" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" name="name" placeholder="Enter your name" id="nameHelp" aria-describedby="emailHelp" required>
                         </div>
                         <div class="login-form-input mb-md-0 mb-3">
-                            <input type="email" class="form-control" placeholder="email@example.com" id="emailHelp" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" name="email" placeholder="email@example.com" id="emailHelp" aria-describedby="emailHelp" required>
                         </div>
                     </div>
                     <div class="d-flex mb-0 mb-md-3 form-row justify-content-between">
                         <div class="login-form-input me-md-2 me-0 mb-md-0 mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone Number" id="phoneHelp" aria-describedby="emailHelp">
-                        </div>
-                        <div class="login-form-input mb-md-0 mb-3">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Subject</option>
-                                <option value="1">Contact Purpose 1 </option>
-                                <option value="2">Contact Purpose 2</option>
-                                <option value="3">Contact Purpose 3</option>
-                                <option value="4">Contact Purpose 4</option>
-                                <option value="5">Contact Purpose 5</option>
-                            </select>
+                            <input type="tel" class="form-control" name="phone" placeholder="Phone Number" id="phoneHelp" aria-describedby="emailHelp" required>
                         </div>
                     </div>
                     <div class="form-group mb-3">
-                        <textarea class="form-control form-control-input" id="textAreaHelp" rows="6" placeholder="Message"></textarea>
+                        <textarea class="form-control form-control-input" style="white-space: pre-wrap;" id="exampleFormControlTextarea1" rows="6" name="message" placeholder="Message"></textarea>
                     </div>
-                    <div class="d-flex justify-content-end mb-3">
-                        <button class="choose-file main-btn me-2 d-flex justify-content-center align-items-center">
-                            <span class="me-1 pt-1 text">Choose File</span>
-                            <div class="image">
-                                <img class="user-img" id="user-0" src="{{ asset('assets/frontend/img/attach-file.svg') }}" />
-                            </div>
-                        </button>
-                        <a class="btn main-btn" href="#your-link">Submit</a>
+                    <div class="d-flex justify-content-end align-items-center mb-3">
+                  
+                        <input class="btn main-btn" type="submit" value="submit" />
                     </div>
                 </form>
             </div>

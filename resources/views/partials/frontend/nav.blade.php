@@ -22,7 +22,7 @@
 
                     @endif
                     @if (auth()->user()->role==1)
-                    <li><a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{ route('frontend.contact') }}">chat</a></li>
+                    <li><a class="nav-link {{ Request::is('chat') ? 'active' : '' }}" href="{{ route('frontend.user.chat') }}">chat <span class=" bg-danger"> {{auth()->user()->messages->where('vue_user',0)->count()}}</span></a></li>
 
                     @endif
                     @endif

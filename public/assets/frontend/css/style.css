@@ -187,7 +187,7 @@ textarea{resize: none;}
 /* chatbox style  */
 .chat-window::-webkit-scrollbar, .about-me .about-box::-webkit-scrollbar, .about-me .account-verification::-webkit-scrollbar, .order-section-webkit-scrollbar{width: 4px;}
 .chat-order{margin-bottom: 30px;}
-.chatbox {height: 640px;max-height: 640px;display: flex;flex-direction: column;overflow: hidden;border-radius: 0 0 7px 7px;}
+.chatbox {max-height: 340px;display: flex;flex-direction: column;overflow: hidden;border-radius: 0 0 7px 7px;}
 .chat-window {flex: auto;max-height: calc(100% - 60px);background: #fff;overflow: auto;padding: 15px 20px;}
 .chat-input {flex: 0 0 auto;height: 60px;background: #40434e;border-top: 1px solid #2671ff;box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);}
 .chat-input input {height: 59px;line-height: 60px;outline: 0 none;border: none;width: calc(100% - 60px);color: white;text-indent: 10px;font-size: 12pt;padding: 12px;padding-left: 50px;background: #01588A;}

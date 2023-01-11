@@ -29,6 +29,22 @@
             </a>
         </li>
         <li class="nav-item">
+            <a href="{{ route('chats.index') }}" class="nav-link {{ Request::is('chats/*') ? 'active' : '' }}">
+                <i class="fa-solid fa-comment "></i>
+                <p>
+                    chat Management
+                </p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('claims.index-claim') }}" class="nav-link {{ Request::is('claims/*') ? 'active' : '' }}">
+                <i class="fa-solid fa-exchange "></i>
+                <p>
+                    Claims Management
+                </p>
+            </a>
+        </li>
+        <li class="nav-item">
             <a href="{{ url('/translations') }}" class="nav-link {{ Request::is('translations') ? 'active' : '' }} {{ Request::is('translations/*') ? 'active' : '' }}">
                 <i class="fa-solid fa-earth-americas"></i>
                 <p>

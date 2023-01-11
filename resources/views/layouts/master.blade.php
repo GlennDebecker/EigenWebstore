@@ -24,8 +24,8 @@
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script> --}}
 
     {{-- Admin LTE --}}
-    <script type="text/javascript" src="js/jquery-1.8.0.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/backend/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/backend/bootstrap.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
 

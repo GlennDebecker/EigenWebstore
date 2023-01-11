@@ -30,19 +30,20 @@
                 <h1>Our Products</h1>
             </div>
             <div class="row">
-                <div class="col-xl-4  col-sm-6">
+                @foreach ($products as $product )
+                <div class="col-xl-3  col-sm-6">
                     <div class="card-wrap d-lg-flex flex-column justify-content-center align-items-center">
-                        <a href="{{ route('frontend.product', 1) }}" class="w-100 mb-2">
-                            <div class="image">
-                                <img src="{{ asset('assets/frontend/img/product-1.jpg') }}" alt="products" class="img-fluid" />
+                        <a href="{{ route('frontend.product', $product->id) }}" class="w-100 mb-2">
+                            <div class="image p-xxl-3 p-2 pb-0">
+                                <img src="{{ asset($product->images[0]->path) }}" alt="product" class="img-fluid"/>
                             </div>
                         </a>
                         <div class="ps-sm-3 ps-2 pe-sm-3 pe-2 pb-sm-3 pb-2 pt-0">
                             <div class="name">
-                                <strong><a href="{{ route('frontend.product', 1) }}">Acer Aspire XC-1760 I5410</a></strong>
+                                <strong><a href="{{ route('frontend.product', $product->id) }}">{{$product->name}}</a></strong>
                             </div>
                             <div class="details">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, illo!</p>
+                                <p>{{$product->title}}</p>
                                 <div class="d-flex justify-content-between align-items-center ratings-wrap">
                                     <ul>
                                         <li>
@@ -64,31 +65,40 @@
                                     <span>99 Reviews</span>
                                 </div>
                                 <div class="specs">
-                                    <span>Intel Core i5 processor</span>
-                                    <span> Shared video card</span>
-                                    <span>32 gb ram</span>
+                                    <span>{{$product->CPU}}</span>
+                                    <span>{{$product->speed}} gH</span>
+                                    <span> {{$product->RAM}} gb ram</span>
+                                
                                 </div>
+                                
                             </div>
-                            <div class="cart d-flex justify-content-between">
-                                <div>
-                                    <strong>Delivery tomorrow</strong>
-                                    <p>Available for pickup even sooner in 3 Coolblue stores</p>
-                                </div>
-                                <a href="" class="main-btn">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                </a>
-                            </div>
+                       
                             <div class="price">
                                 <span>Price</span>
                                 <div>
-                                    <span>$</span><span>300</span>
+                                    <span>$</span><span>{{$product->price}}</span>
                                 </div>
                             </div>
+                            @if (auth()->user())
+                                @if (auth()->user()->role==1)
+                                <div class="cart d-flex justify-content-between">
+                                    <div>
+                                        <strong>Contact Admin</strong>
+                                    </div>
+                                    <a href="{{ route('frontend.user.chat', ['pre'=>'Can I order this '.$product->name]) }}" class="main-btn">
+                                        <span><i class="fa fa-comment" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                @endif
+                                
+                            @endif
+                        
                         </div>
                     </div>
                 </div>
+                @endforeach
+             
             </div>
         </div>
     </div>

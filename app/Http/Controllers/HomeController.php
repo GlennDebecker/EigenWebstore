@@ -24,8 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $total_user = User::where('status', 1)->where('role', 1)->get()->count();
-        $total_admin = User::where('status', 1)->where('role', 2)->get()->count();
+        $total_user = User::where('status', 1)->get()->count();
+        $total_admin = User::where('status', 1)->whereNot('role', 3)->get()->count();
         $disabled_user = User::where('status', -1)->get()->count();
 
         return view('backend.dashboard', compact('total_user', 'total_admin', 'disabled_user'));

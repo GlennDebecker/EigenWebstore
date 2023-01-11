@@ -82,7 +82,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3" for="pros">Pros <span class="text-danger">(add - between each of them)*</span></label>
                                     <div class="col-sm-9">
-                                        <textarea type="text" class="form-control" id="Pros" name="pros"  placeholder="Pros" required autocomplete="off">{{ old('pros') }}</textarea>
+                                        <textarea type="text" class="form-control" id="Pros" name="pros"  placeholder="Pros" style="white-space: pre-wrap;" required autocomplete="off">{{ old('pros') }}</textarea>
                                         @if ($errors->has('pros'))
                                             <span class="text-danger">{{ $errors->first('pros') }}</span>
                                         @endif
@@ -91,7 +91,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3" for="cons">Cons <span class="text-danger">(add - between each of them)*</span></label>
                                     <div class="col-sm-9">
-                                        <textarea type="text" class="form-control" id="cons" name="cons"  placeholder="cons" required autocomplete="off">{{ old('cons') }}</textarea>
+                                        <textarea type="text" class="form-control" id="cons" name="cons"  placeholder="cons" style="white-space: pre-wrap;" required autocomplete="off">{{ old('cons') }}</textarea>
                                         @if ($errors->has('cons'))
                                             <span class="text-danger">{{ $errors->first('cons') }}</span>
                                         @endif

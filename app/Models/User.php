@@ -83,7 +83,10 @@ class User extends Authenticatable implements MustVerifyEmail
               return 'bg-secondary';
           }
     }
-
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
     public function verified(){
         if($this->email_verified_at === null) {
             return false;
