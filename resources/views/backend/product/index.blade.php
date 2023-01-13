@@ -17,7 +17,7 @@
         <div class="col-md-10 col-lg-12">
             <div class="card custom-card">
                 <div class="card-header">
-                    <h3 class="card-title">product Management</h3>
+                    <h3 class="card-title">Product Management</h3>
                     @if(auth()->user()->role == 3)
                     <div class="card-tools">
                         <a href="{{ route('products.add-product') }}" class="btn btn-sm btn-primary">Add new product</a>
@@ -35,7 +35,7 @@
                                 <th>storage</th>
                                 <th>RAM</th>
                                 <th>Created At</th>
-                                <th> actions</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,10 +43,10 @@
                             <tr>
                                 <td>{{ $key + 1 }}</td>
                                 <td>{{ $product->name }}</td>
-                                <td>{{ $product->price}}$</td>
+                                <td>{{ $product->price}}€</td>
                                 <td>{{ $product->CPU}}</td>
-                                <td>{{ $product->storage}} go</td>
-                                <td>{{ $product->RAM}} go</td>
+                                <td>{{ $product->storage}} GB</td>
+                                <td>{{ $product->RAM}} GB</td>
                                 <td>{{ date('d-m-Y h:m A', strtotime($product->created_at)) }}</td>
                                 <td>
                                     <div class="btn-group">

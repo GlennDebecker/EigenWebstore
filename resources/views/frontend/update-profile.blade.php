@@ -52,8 +52,8 @@
                                 </div>
                                 <div class="d-lg-flex mb-3">
                                     <div class="login-form-input mb-lg-3 mb-2 me-lg-2 me-0">
-                                        <input type="text" name="code" value="{{auth()->user()->postal_code}}" class="form-control"  placeholder="postale code" value="34400" id="postalHelp" aria-describedby="postalHelp">
-                                        <small> postale code</small>
+                                        <input type="text" name="code" value="{{auth()->user()->postal_code}}" class="form-control"  placeholder="postal code" value="34400" id="postalHelp" aria-describedby="postalHelp">
+                                        <small> postal code</small>
                                     </div>
                                     <div class="login-form-input mb-md-0 mb-3">
                                         <input type="text" name="street" class="form-control" value="{{auth()->user()->street}}" placeholder="street name" id="addressHelp" aria-describedby="addressHelp">

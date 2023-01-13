@@ -137,31 +137,6 @@
               
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="customer-reviews ps-lg-3 text-lg-end">
-                        <h4>Customer Ratings</h4>
-                        <div class="d-lg-flex align-items-end justify-content-center flex-column pt-lg-3 pt-1">
-                            <ul>
-                                <li>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                </li>
-                            </ul>
-                            <strong>99 Reviews</strong>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

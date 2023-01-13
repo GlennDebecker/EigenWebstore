@@ -75,7 +75,7 @@
                                     </div>
                                 </button>
                              
-                                <!-- <input type="file" class="choose-input"/> -->
+                                <!-- <input type="file" class="choose-input"/> Heb het toch niet gedaan, zal ik later proberen implementeren -->
                             </form>
                         </section>
                     </div>

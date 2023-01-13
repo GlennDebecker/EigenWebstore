@@ -17,7 +17,7 @@
                 </div>
             @endif
             <h1>Email Confirmation</h1>
-            <p>Hey <strong>JustGlennbe,</strong> you are almost ready to start enjoying ComputerKopen. </p>
+            <p>Hey <strong>""</strong> you are almost ready to start enjoying ComputerKopen. </p>
             <p class="mb-md-5 mb-3">Simply click the below button to verify your email. Once you verify, You will have you will recover your Password.</p>
             <form method="POST" action="{{ route('verification.resend') }}">
                 @csrf

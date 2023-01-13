@@ -15,13 +15,13 @@
                 <div class="col-12">
                     <div class="contact-box">
                         <h1>Contact Us</h1>
-                        <p>Need help? Have a question? We are here to assist. Send us a message and we’ll be in touch shortly.</p>
+                        <p>Need help? Have a question? Send me a message and ill be in touch shortly.</p>
                         <div class="wrap">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="d-flex mb-3 align-items-center">
                                         <span class="me-sm-3 me-2 ref-icon d-flex justify-content-center align-items-center"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                                        <strong class="flex-1">19-B, North Belgium, IT Tower Shop#471</strong>
+                                        <strong class="flex-1">Tervuren 3080, Belgium </strong>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">

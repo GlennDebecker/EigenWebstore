@@ -17,7 +17,7 @@
         <div class="col-md-10 col-lg-12">
             <div class="card custom-card">
                 <div class="card-header">
-                    <h3 class="card-title">claims Management</h3>
+                    <h3 class="card-title">Questions Management</h3>
                
                 </div>
                 <div class="card-body">

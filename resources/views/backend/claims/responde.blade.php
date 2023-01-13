@@ -16,7 +16,7 @@
         <div class="col-md-10 col-lg-12">
             <div class="card custom-card">
                 <div class="card-header">
-                    <h3 class="card-title">Claims Management</h3>
+                    <h3 class="card-title">Questions Management</h3>
                     @if(auth()->user()->role == 3)
                     <div class="card-tools">
                         <a href="{{ route('claims.index-claim') }}" class="btn btn-sm btn-primary">Back</a>

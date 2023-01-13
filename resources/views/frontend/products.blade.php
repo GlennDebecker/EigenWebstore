@@ -62,12 +62,12 @@
                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
                                         </li>
                                     </ul>
-                                    <span>99 Reviews</span>
+                                    
                                 </div>
                                 <div class="specs">
                                     <span>{{$product->CPU}}</span>
-                                    <span>{{$product->speed}} gH</span>
-                                    <span> {{$product->RAM}} gb ram</span>
+                                    <span>{{$product->speed}} GHz</span>
+                                    <span> {{$product->RAM}} GB RAM</span>
                                 
                                 </div>
                                 
@@ -76,7 +76,7 @@
                             <div class="price">
                                 <span>Price</span>
                                 <div>
-                                    <span>$</span><span>{{$product->price}}</span>
+                                    <span>€</span><span>{{$product->price}}</span>
                                 </div>
                             </div>
                             @if (auth()->user())
