@@ -16,6 +16,13 @@ class UserController extends Controller
         return $this->middleware('auth');
     }
 
+    public function change_status($id,$status){
+        $user=User::find($id);
+        $user->orderstatus=$status;
+        $user->update();
+        return redirect()->back();
+    }
+    
     public function index(Request $request){
       
         $users = User::all();

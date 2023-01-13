@@ -82,7 +82,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3" for="password">Password</label>
                                     <div class="col-sm-9">
-                                        <input type="password" class="form-control" id="password" name="password" value="" required  autocomplete="off">
+                                        <input type="password" class="form-control" id="password" name="password" value=""   autocomplete="off">
                                         @if ($errors->has('password'))
                                             <span class="text-danger">{{ $errors->first('password') }}</span>
                                         @endif

@@ -51,8 +51,8 @@
                                 <td>
                                     <div class="btn-group">
                                      
-                                        <a href="" class="btn btn-info btnView"><i class="fas fa-eye"></i></a>
-                                        <a href="" class="btn btn-dark btnEdit"><i class="fas fa-edit"></i></a>
+                                        <a href="{{ route('frontend.product', ['id'=>$product->id]) }}" class="btn btn-info btnView"><i class="fas fa-eye"></i></a>
+                                        <a href="{{ route('products.edit-product', ['id'=>$product->id]) }}" class="btn btn-dark btnEdit"><i class="fas fa-edit"></i></a>
                                         <form action="{{route("products.delete-product",$product->id)}}" method="Post">
 
                                             @method('DELETE')

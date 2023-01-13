@@ -26,17 +26,15 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-10 m-auto">
-                            <form action="{{ route('products.store-product') }}" method="POST" class="form-horizontal" enctype="multipart/form-data" autocomplete="off">
+                            <form action="{{ route('claims.responde-claim-save',$claim->id ) }}" method="POST" class="form-horizontal" enctype="multipart/form-data" autocomplete="off">
                             @csrf
                             
-                              
-                              
                                 <div class="form-group row">
                                     <label class="col-sm-3" for="description">Message<span class="text-danger">*</span></label>
                                     <div class="col-sm-9">
-                                        <textarea type="email" class="form-control" id="description" name="description" style="white-space: pre-wrap;"  placeholder="Enter the product description" required autocomplete="off">{{ old('description') }}</textarea>
-                                        @if ($errors->has('description'))
-                                            <span class="text-danger">{{ $errors->first('description') }}</span>
+                                        <textarea type="email" class="form-control" id="description" name="message" style="white-space: pre-wrap;"  placeholder="Enter the product description" required autocomplete="off">{{ old('description') }}</textarea>
+                                        @if ($errors->has('message'))
+                                            <span class="text-danger">{{ $errors->first('message') }}</span>
                                         @endif
                                     </div>
                                 </div>

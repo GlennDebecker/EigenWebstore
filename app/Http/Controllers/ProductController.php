@@ -99,7 +99,8 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product=Product::find($id);
+        return view('backend.product.edit')->with('product',$product);
     }
 
     /**
@@ -111,7 +112,35 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+          
+        $this->validate($request, [
+            'name' => 'required|string|max:255',
+            'title' => 'required|string|max:255',
+            'CPU' => 'required',
+            'RAM' => 'required',
+            'storage' => 'required',
+            'speed' => 'required',
+            'description' => 'required',
+            'price' => 'required',
+            'pros' => 'required',
+            'cons' => 'required',
+        ]);
+      $product=Product::find($id);
+        $product->fill($request->post())->save();
+
+if ($request->images) {
+    # code...
+
+        foreach ($request->images as $imagefile) {
+            $image = new Image();
+            $path = $imagefile->store('/images/resource', ['disk' =>   'my_files']);
+            $image->path = $path;
+            $image->product_id = $product->id;
+            $image->save();
+          }
+        }
+        $this->message('success', 'Product updated Successfullly');
+        return redirect()->route('products.index-product');
     }
 
     /**

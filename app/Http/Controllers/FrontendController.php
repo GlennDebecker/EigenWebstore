@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\Claim;
 use App\Models\Message;
 use App\Models\Product;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Hash;
 
 class FrontendController extends Controller
 {
@@ -53,14 +55,40 @@ class FrontendController extends Controller
 
     //User Profile
     public function profile(){
-        return view('frontend.profile');
+    
+        return redirect()->route('frontend.user.chat');
     }
 
     //Profile Update
     public function update_profile(){
         return view('frontend.update-profile');
     }
+    public function update_profile_save(Request $request){
+     
+        $this->validate($request, [
+            'fname' => 'required|string|max:255',
+            'sname' => 'required|string|max:255',
+            'email' => 'required|email',
+      
+      
+        ]);
+        $user = User::find(auth()->user()->id);
+ 
+        $user->sname = $request->sname;
+        $user->fname = $request->fname;
+        $user->email = $request->email;
+        if($request->password){
+            $user->password = Hash::make($request->password);
+        }
+        $user->phone = $request->phone;
+        $user->postal_code = $request->code;
+        $user->street = $request->street;
+      
+        $user->update();
 
+        return redirect()->route('frontend.user.profile');
+    }
+    
 
    public function save_claim(Request $request){
     $this->validate($request, [
@@ -83,7 +111,13 @@ class FrontendController extends Controller
         $message->vue_user=true;
          $message->update();
      }
-    return view('frontend.chat')->with('pre',$pre);
+     if(auth()->user()->role==1){
+        return view('frontend.chat')->with('pre',$pre);
+    }
+    else{
+        return view('frontend.profile');
+    }
+ 
    }
 
 

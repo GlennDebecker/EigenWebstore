@@ -12,8 +12,8 @@
     <div class="container">
         <div class="welcome d-sm-flex d-block justify-content-between align-items-end position-relative">
             <div>
-                <strong class="para-light">{{auth()->user()->email}}</strong>
-                <h2 class="mb-1">User Name</h2>
+                <strong class="para-light">welcome back</strong>
+                <h2 class="mb-1">{{auth()->user()->fname}} {{auth()->user()->sname}} </h2>
             </div>
             <div>
                 <div class="edit">
@@ -27,7 +27,7 @@
                     <span class="me-sm-2 me-2 ref-icon d-flex justify-content-center align-items-center">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                     </span>
-                    <strong>contact@example.com</strong>
+                    <strong>{{auth()->user()->email}}</strong>
                 </div>
             </div>
         </div>

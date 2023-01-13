@@ -11,6 +11,8 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\URL;
+use PSpell\Config;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,11 +34,7 @@ Route::get('/language/{locale}', function ($locale) {
     return redirect()->back();
 })->name('lang');
 
-//Email varification
-Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
-    $request->fulfill();
-    return redirect()->route('dashboard');
-})->middleware(['auth', 'signed'])->name('verification.verify');
+
 
 //Frontend Routes
 Route::controller(FrontendController::class)->name('frontend.')->group(function(){
@@ -54,6 +52,7 @@ Route::group(['middleware' => ['auth', 'checkstatus', 'verified']], function () 
     Route::controller(FrontendController::class)->name('frontend.user.')->group(function(){
         Route::get('/profile','profile')->name('profile');
         Route::get('/update-profile','update_profile')->name('profile.update');
+        Route::put('/update-profile_save','update_profile_save')->name('profile.update_save');
         Route::get('/chat/{pre?}','chat')->name('chat');
         Route::post('/chat-save','chat_save')->name('chat-save');
     });
@@ -71,6 +70,7 @@ Route::group(['middleware' => ['auth', 'checkstatus', 'admin']], function () {
         Route::get('/edit/{id}','edit')->name('edit')->middleware(['admin']);
         Route::post('/edit-store','edit_update')->name('edit.store')->middleware(['admin']);
         Route::get('/status/{id}','status')->name('status')->middleware(['admin']);
+        Route::get('/change_status/{id}/{status}','change_status')->name('change_status')->middleware(['admin']);
     });
 
     Route::controller(ProductController::class)->prefix('products')->name('products.')->group(function(){
@@ -79,7 +79,7 @@ Route::group(['middleware' => ['auth', 'checkstatus', 'admin']], function () {
         Route::post('/add-product/store','store')->name('store-product');
         Route::get('/view-product/{id}','view')->name('view-product');
         Route::get('/edit-product/{id}','edit')->name('edit-product');
-        Route::post('/edit-product-store','edit_update')->name('edit.store-product');
+        Route::put('/edit-product-store/{id}','update')->name('edit.store-product');
         Route::delete('/delete-product/{id}','destroy')->name('delete-product');
  
     });
@@ -87,6 +87,7 @@ Route::group(['middleware' => ['auth', 'checkstatus', 'admin']], function () {
     Route::controller(ClaimController::class)->prefix('claims')->name('claims.')->group(function(){
         Route::get('/index-claim','index')->name('index-claim')->middleware(['admin']);
         Route::get('/responde-claim/{id}','responde')->name('responde-claim')->middleware(['admin']);
+        Route::post('/responde-claim-save/{id}','responde_save')->name('responde-claim-save')->middleware(['admin']);
 
  
     });

@@ -210,6 +210,9 @@
         </div>
     </div>
 </div>
+@if (!auth()->user())
+    
+
 {{-- Cookie --}}
 <div class="cookies-section">
     <div class="modal fade" id="cookiesModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cookiesModalLabel" aria-hidden="true">
@@ -230,4 +233,5 @@
         </div>
     </div>
 </div>
+@endif
 @endsection

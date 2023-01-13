@@ -16,9 +16,12 @@ class ChatController extends Controller
     public function index()
     {   
         $users=User::all();
-       
+      $users=$users->filter(function ($user)  {
+            return $user->messages->count()>0;
+        });
    $users= $users->where("role",1)->sortBy(function($user) { 
-    return $user->messages()->latest()->first()->created_at;
+
+        return $user->messages()->count();
   });
     return view('backend.chat.index')->with('users',$users);
         //
