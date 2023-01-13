@@ -130,8 +130,9 @@ class ProductController extends Controller
 
 if ($request->images) {
     # code...
-
+        
         foreach ($request->images as $imagefile) {
+            $product->images()->delete();
             $image = new Image();
             $path = $imagefile->store('/images/resource', ['disk' =>   'my_files']);
             $image->path = $path;

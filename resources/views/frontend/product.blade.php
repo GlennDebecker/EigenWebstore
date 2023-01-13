@@ -69,7 +69,7 @@
                         <h4>Description</h4>
                         <ul>
                             <li>
-                                <p  style="width: 100px;">
+                                <p  >
                                     {{ $product->description }}
                                 </p>
                                
