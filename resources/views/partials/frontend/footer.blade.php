@@ -9,20 +9,9 @@
             <div class="footer-nav">
                 <ul class="navbar-nav flex-row flex-wrap justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('frontend.pages', 1) }}">Privacy Policy</a>
+                        <a class="nav-link" href="{{ route('frontend.pages', 1) }}">About me</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('frontend.pages', 1) }}">Cookie Settings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('frontend.pages', 1) }}">Return Policy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('frontend.pages', 1) }}">Terms & Conditions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('frontend.pages', 1) }}">Delivery Policy</a>
-                    </li>
+ 
                 </ul>
             </div>
             <div class="footer-icons">

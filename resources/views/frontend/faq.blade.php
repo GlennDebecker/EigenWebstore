@@ -24,10 +24,10 @@
                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p>If you think you'hv been the victim of sny scam, feel you have been tricked into giving your secturing details or notice anything suspecious on your account, please call us as soon as possible.</p>
-                            <p class="mb-1">Call: <strong>03 456 100 100</strong> (lines are open 24/7, 365 days a year)</p>
-                            <p class="mb-1">Text Phone: <strong>03 456 100 147</strong></p>
-                            <p class="mb-1">Calling from abroad: <strong>+44 113 234 5678</strong></p>
-                            <p class="mb-1">Text relay: <strong>+44 151 494 1260</strong></p>
+                            <p class="mb-1">Call: <strong>0488612862</strong> (lines are open 24/7, 365 days a year)</p>
+                            <p class="mb-1">Text Phone: <strong>0488612862</strong></p>
+                            <p class="mb-1">Calling from abroad: <strong>+32 113 234 5678</strong></p>
+                            <p class="mb-1">Text relay: <strong>+32 151 494 1260</strong></p>
                         </div>
                     </div>
                 </div>

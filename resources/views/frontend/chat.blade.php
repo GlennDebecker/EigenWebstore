@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Profile')
+@section('title', 'chat')
 
 @section('content')
 <div class="profile mb-5 faqs">
@@ -12,7 +12,7 @@
     <div class="container">
         <div class="welcome d-sm-flex d-block justify-content-between align-items-end position-relative">
             <div>
-                <strong class="para-light">welcome back</strong>
+                <strong class="para-light">Welcome Back</strong>
                 <h2 class="mb-1">{{auth()->user()->fname}} {{auth()->user()->sname}} </h2>
             </div>
             <div>
@@ -50,8 +50,8 @@
                                         {{$message->message}}
                                     </p>
                                 </div>
-                                <span class="timestamp"><span class="username">me </span>&bull;<span
-                                        class="posttime">   {{$message->created_at}}</span></span>
+                                <span class="timestamp"><span class="username">Me </span>&bull;<span
+                                        class="posttime">  {{$message->created_at}}</span></span>
                             </div>
                             <div class="image">
                                 <img class="user-img" id="user-0" src="{{ asset('assets/frontend/img/user.svg') }}" />
@@ -67,7 +67,7 @@
                                         {{$message->message}}
                                     </p>
                                 </div>
-                                <span class="timestamp"><span class="username">admin</span>&bull;<span
+                                <span class="timestamp"><span class="username">Admin</span>&bull;<span
                                         class="posttime">   {{$message->created_at}}</span></span>
                             </div>
                             <div class="image">

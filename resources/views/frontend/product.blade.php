@@ -21,7 +21,7 @@
                     <div class="pros-con">
                         <div class="d-flex align-items-center mb-3 flex-wrap">
                             <h4 class="me-3 mb-0">Pros and cons</h4>
-                            <span>According to our desktop expert</span>
+                            <span>According to me</span>
                         </div>
                         <ul class="mb-3">
                             @foreach ($pros as $pro)
@@ -42,13 +42,13 @@
                         <div class="d-flex mb-md-0 mb-2">
                             <strong class="me-3">Price:</strong>
                             <strong>
-                                <span>$</span><span>{{$product->price}}</span>
+                                <span>€</span><span>{{$product->price}}</span>
                             </strong>
                         </div>
                         <div class="buy-btns d-flex align-items-center justify-content-center">
                             @if (auth()->user())
                                 @if (auth()->user()->role==1)
-                                <a href="{{ route('frontend.user.chat', ['pre'=>'Can I order this '.$product->name]) }}" class="main-btn d-flex align-items-center me-3">
+                                <a href="{{ route('frontend.user.chat', ['pre'=>'Could I please get more info for this '.$product->name]) }}" class="main-btn d-flex align-items-center me-3">
                                     <span class="me-2">
                                         <i class="fa fa-info" aria-hidden="true"></i>
                                     </span>

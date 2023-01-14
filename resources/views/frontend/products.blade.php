@@ -11,9 +11,9 @@
                     <div class="banner-text">
                         <strong class="para-light">Our Products</strong>
                         <h1>Includes All Featured, with Exra Ordinary Specs</h1>
-                        <p>A Magical and Revolutionary device at an unbelievable price. Does more, cost less
-                            & its that simple. A Magical and Revolutionary device at an unbelievable price.
-                            Does more, cost less & its that simpple.</p>
+                        <p>Do you want a custom made computer? But you do not know anything about computers?
+                            You can choose one from our examples and customize it to your needs, just tell me for what you need the computer and what the budget is, I do the rest.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -67,7 +67,7 @@
                                 <div class="specs">
                                     <span>{{$product->CPU}}</span>
                                     <span>{{$product->speed}} GHz</span>
-                                    <span> {{$product->RAM}} GB RAM</span>
+                                    <span>{{$product->RAM}} GB RAM</span>
                                 
                                 </div>
                                 

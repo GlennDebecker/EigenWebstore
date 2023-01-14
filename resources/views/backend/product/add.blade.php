@@ -58,7 +58,7 @@
                                     
                                     <div class="col-sm-2">
                                         <input type="text" class="form-control" id="spped" name="speed" value="{{ old('speed') }}" placeholder="Enter the Processor speed " required autocomplete="off">
-                                        <small>processor speed </small>
+                                        <small>Processor Speed </small>
                                         @if ($errors->has('speed'))
                                             <span class="text-danger">{{ $errors->first('speed') }}</span>
                                         @endif

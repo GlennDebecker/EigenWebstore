@@ -17,7 +17,7 @@
         <div class="col-md-10 col-lg-12">
             <div class="card custom-card">
                 <div class="card-header">
-                    <h3 class="card-title">chat Management</h3>
+                    <h3 class="card-title">Chat Management</h3>
                
                 </div>
                 <div class="card-body">
@@ -25,11 +25,11 @@
                         <thead>
                             <tr>
                            
-                                <th> User Name</th>
+                                <th>User Name</th>
                             
-                                <th>new messages</th>
+                                <th>New Messages</th>
                                 <th>Created at</th>
-                                <th>go to Conversation</th>
+                                <th>Conversation</th>
                           
                            
                             </tr>
@@ -44,7 +44,7 @@
                                 <td>
                                     <div class="btn-group">
                                      
-                                        <a href="{{ route('chats.conversation', ['id'=>$user->id]) }}" class="btn btn-success btnView">Responde</a>
+                                        <a href="{{ route('chats.conversation', ['id'=>$user->id]) }}" class="btn btn-success btnView">Respond</a>
                            
                                     </div>
                                       

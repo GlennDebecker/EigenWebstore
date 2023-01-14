@@ -27,13 +27,13 @@
                                 <div class="col-lg-6">
                                     <div class="d-flex mb-3 align-items-center">
                                         <span class="me-sm-3 me-2 ref-icon d-flex justify-content-center align-items-center"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
-                                        <strong>Call: 03 456 100 100 </strong>
+                                        <strong>Call: 04 88612862 </strong>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex mb-3 align-items-center">
                                         <span class="me-sm-3 me-2 ref-icon d-flex justify-content-center align-items-center"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                        <strong>contact@example.com</strong>
+                                        <strong>support@computerkopen.store</strong>
                                     </div>
                                 </div>
                             </div>

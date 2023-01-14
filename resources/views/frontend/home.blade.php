@@ -15,7 +15,7 @@
                         <h1>
                             {{ __('home.banner_heading') }}
                         </h1>
-                        <p>A Magical and Revolutionary device at an unbelievable price. Does more, cost less & its that simple. A Magical and Revolutionary device at an unbelievable price. Does more, cost less & its that simpple.</p>
+                        <p>A Magical and Revolutionary device at an unbelievable price. Does more, cost less & its that simple.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -28,78 +28,6 @@
     </div>
     <div class="main-products pb-lg-5 pb-3 home-products">
         <div class="container">
-            <div class="row">
-                @foreach ($products as $product )
-                <div class="col-xl-3  col-sm-6">
-                    <div class="card-wrap d-lg-flex flex-column justify-content-center align-items-center">
-                        <a href="{{ route('frontend.product', $product->id) }}" class="w-100 mb-2">
-                            <div class="image p-xxl-3 p-2 pb-0">
-                                <img src="{{ asset($product->images[0]->path) }}" alt="product" class="img-fluid"/>
-                            </div>
-                        </a>
-                        <div class="ps-sm-3 ps-2 pe-sm-3 pe-2 pb-sm-3 pb-2 pt-0">
-                            <div class="name">
-                                <strong><a href="{{ route('frontend.product', $product->id) }}">{{$product->name}}</a></strong>
-                            </div>
-                            <div class="details">
-                                <p>{{$product->title}}</p>
-                                <div class="d-flex justify-content-between align-items-center ratings-wrap">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star" aria-hidden="true"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                        </li>
-                                    </ul>
-                                    <span>99 Reviews</span>
-                                </div>
-                                <div class="specs">
-                                    <span>{{$product->CPU}}</span>
-                                    <span>{{$product->speed}} gH</span>
-                                    <span> {{$product->RAM}} gb ram</span>
-                                
-                                </div>
-                                
-                            </div>
-                       
-                            <div class="price">
-                                <span>Price</span>
-                                <div>
-                                    <span>$</span><span>{{$product->price}}</span>
-                                </div>
-                            </div>
-                            @if (auth()->user())
-                                @if (auth()->user()->role==1)
-                                <div class="cart d-flex justify-content-between">
-                                    <div>
-                                        <strong>Contact Admin</strong>
-                                    </div>
-                                    <a href="{{ route('frontend.user.chat', ['pre'=>'Can I order this '.$product->name]) }}" class="main-btn">
-                                        <span><i class="fa fa-comment" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                                @endif
-                                
-                            @endif
-                        
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-             
-                
-            </div>
         </div>
     </div>
     <div class="about-me pb-lg-5">
@@ -114,9 +42,9 @@
                         <div class="image mb-3">
                             <img src="{{ asset('/assets/frontend/img/question-mark.svg') }}"/>
                         </div>
-                        <p class="mb-3">Hi, I'm <strong>ComputerKopen</strong>. I will provide you the computer related services you need.</p>
+                        <p class="mb-3">Hi, I'm <strong>Glenn</strong>. I will make you a custom computer for your budget and needs</p>
                         <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur quibusdam est explicabo! Beatae ad sunt, nam doloribus facere delectus officiis excepturi quis, mollitia necessitatibus velit iure architecto eos nihil.</p>
-                        <strong class="para-light">CEO, ComputerKopen</strong>
+                        <strong class="para-light">Owner, ComputerKopen</strong>
                     </div>
                 </div>
                 <div class="col-lg-7 ps-lg-0">
@@ -213,6 +141,7 @@
 @if (!auth()->user())
     
 
+<!-- Momenteel uitgezet -> Ga ik later implementeren zodat er een cookie pop-up komt die ze kunnen accepteren. 
 {{-- Cookie --}}
 <div class="cookies-section">
     <div class="modal fade" id="cookiesModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cookiesModalLabel" aria-hidden="true">
@@ -233,5 +162,6 @@
         </div>
     </div>
 </div>
+-->
 @endif
 @endsection

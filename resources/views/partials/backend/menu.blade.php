@@ -32,7 +32,7 @@
             <a href="{{ route('chats.index') }}" class="nav-link {{ Request::is('chats/*') ? 'active' : '' }}">
                 <i class="fa-solid fa-comment "></i>
                 <p>
-                    chat Management
+                    Chat Management
                 </p>
             </a>
         </li>
@@ -40,7 +40,7 @@
             <a href="{{ route('claims.index-claim') }}" class="nav-link {{ Request::is('claims/*') ? 'active' : '' }}">
                 <i class="fa-solid fa-exchange "></i>
                 <p>
-                    Claims Management
+                    Questions Management
                 </p>
             </a>
         </li>

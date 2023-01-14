@@ -12,7 +12,7 @@
     <div class="container">
         <div class="welcome d-sm-flex d-block justify-content-between align-items-end position-relative">
             <div>
-                <strong class="para-light">welcome back</strong>
+                <strong class="para-light">Welcome Back</strong>
                 <h2 class="mb-1">{{auth()->user()->fname}} {{auth()->user()->sname}} </h2>
             </div>
             <div>

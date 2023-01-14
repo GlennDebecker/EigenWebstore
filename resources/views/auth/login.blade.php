@@ -17,7 +17,7 @@
                 <div class="login-main">
                     <div class="login-main-content">
                         <strong class="para-light">Welcome Back</strong>
-                        <h2>Login to your Account</h2>
+                        <h2>Login to your account</h2>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
                             <div class="mb-3 login-form-input">

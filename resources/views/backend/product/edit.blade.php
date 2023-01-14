@@ -42,7 +42,7 @@
                                     <div class="col-sm-4">
                                         <input type="text" class="form-control" id="title" name="title" value="{{ $product->title }}" placeholder="Enter the product title" required autocomplete="off">
                                         <small>Product title</small>
-                                        @if ($errors->has('title'))
+                                        @if ($errors->has('Title'))
                                             <span class="text-danger">{{ $errors->first('title') }}</span>
                                         @endif
                                     </div>
@@ -59,7 +59,7 @@
                                     
                                     <div class="col-sm-2">
                                         <input type="text" class="form-control" id="spped" name="speed" value="{{ $product->speed}}" placeholder="Enter the Processor speed " required autocomplete="off">
-                                        <small>processor speed </small>
+                                        <small>Processor speed </small>
                                         @if ($errors->has('speed'))
                                             <span class="text-danger">{{ $errors->first('speed') }}</span>
                                         @endif
@@ -108,7 +108,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-sm-3" for="dob">price<span class="text-danger">*</span></label>
+                                    <label class="col-sm-3" for="dob">Price<span class="text-danger">*</span></label>
                                     <div class="col-sm-9">
                                         <input type="number"   class="form-control" id="dob" name="price" value="{{ $product->price }}" required autocomplete="off">
                                         @if ($errors->has('price'))
@@ -129,7 +129,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3"></label>
                                     <div class="col-sm-9">
-                                        <button type="submit" class="btn btn-primary w-100">edit product</button>
+                                        <button type="submit" class="btn btn-primary w-100">Edit Product</button>
                                     </div>
                                 </div>
 

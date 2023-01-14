@@ -28,11 +28,11 @@
                     <table id="table" class="table table-striped display nowrap">
                         <thead>
                             <tr>
-                                <th>SL</th>
+                                <th>Nr</th>
                                 <th>Name</th>
-                                <th>price</th>
+                                <th>Price</th>
                                 <th>Processor</th>
-                                <th>storage</th>
+                                <th>Storage</th>
                                 <th>RAM</th>
                                 <th>Created At</th>
                                 <th>Actions</th>
