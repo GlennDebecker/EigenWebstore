@@ -8,8 +8,24 @@
             </strong>
             <div class="footer-nav">
                 <ul class="navbar-nav flex-row flex-wrap justify-content-center">
+                
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('frontend.pages', 1) }}">About me</a>
+                        <a class="nav-link" href="{{ route('frontend.PrivacyPolicy') }}">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('frontend.CookieSettings') }}">Cookie Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('frontend.ReturnPolicy') }}">Return Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('frontend.TermsConditions') }}">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('frontend.DeliveryPolicy') }}">Delivery Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('frontend.aboutme') }}">About me</a>
                     </li>
  
                 </ul>

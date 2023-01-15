@@ -48,9 +48,35 @@ class FrontendController extends Controller
         return view('frontend.product')->with('product',$product)->with('cons',$con)->with('pros',$pos);
     }
 
-    //Privacy Policy, Cookie Settings, Return Policy, Terms & Conditions, Delivery Policy pages
-    public function pages(){
-        return view('frontend.pages');
+
+    // ----- FOOTER -----
+    //Cookie Settings
+    public function CookieSettings(){
+        return view('frontend.CookieSettings');
+    }
+
+    // PrivacyPolicy
+    public function PrivacyPolicy() {
+        return view('frontend.PrivacyPolicy');
+    }
+
+    // Delivery Policy
+    public function DeliveryPolicy(){
+        return view('frontend.DeliveryPolicy');
+    }
+
+    // Return Policy
+    public function ReturnPolicy(){
+        return view('frontend.ReturnPolicy');
+    }
+
+    // Terms & Conditions
+    public function TermsConditions(){
+        return view('frontend.TermsConditions');
+    }
+    //About me
+    public function aboutme(){
+        return view('frontend.aboutme');
     }
 
     //User Profile

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'chat')
+@section('title', 'Profile')
 
 @section('content')
 <div class="profile mb-5 faqs">
